@@ -60,8 +60,6 @@ function Hentai(){
                 Setmangchua([...mangchua,goccay])
                 
             )
-        }else{
-            return
         }
         
       
