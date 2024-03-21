@@ -29,8 +29,19 @@ input{
     justify-content: space-between;
  }
 
- .add svg{
+.add svg{
     padding: auto;
+ 
     padding-right: 5px;
     
  }
+ .add button{
+    color: white;
+    background-color: rgb(92, 184, 92);
+    border-radius: 5px;
+    border:  none;
+    height: 30px;
+ }
+
+
+
