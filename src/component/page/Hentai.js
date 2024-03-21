@@ -1,18 +1,86 @@
+import React, { useState, useEffect } from "react";
+import ListGroup from 'react-bootstrap/ListGroup';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
+
+import InputGroup from 'react-bootstrap/InputGroup';
+
+
+
+import { Container } from "react-bootstrap";
+
 function Hentai(){
+  
     return(
-        <>
-        <h1>HENTAI</h1>
-        <p> (Hiragana: へんたい; Kanji: 変態 (變態); phiên âm từ chữ Hán: "biến thái") là một từ tiếng Nhật dùng để ám chỉ truyện tranh, phim hoạt hình khiêu dâm của Nhật Bản. Từ này trong tiếng Anh được từ điển Oxford định nghĩa là một thể loại con nằm trong các thể loại anime và manga Nhật Bản.
+    <Container>
+       
+        
+        <div className="themmoi">
+                <div className="timkiem">    
+                    <InputGroup className="mb-3">
+                    <InputGroup.Text id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg></InputGroup.Text>
+                    <Form.Control
+                    placeholder="Username"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    />
+                </InputGroup>
+                
+                    
+                </div>
+        
+            <div className="listbook">
+                <p id="tieude">A list of Books</p>
+                    <ListGroup>
+                        <ListGroup.Item><div className="tensach"> <div className="ten" >hentai</div><div className="nguoiviet">trinhtranphuongtuan</div></div></ListGroup.Item>
+                      
+                    </ListGroup> 
+            
+            </div>
+            <div className="tacgia">
+                <FloatingLabel controlId="floatingSelect" label="excellent author">
+                    <Form.Select aria-label="Floating label select example">
+                        
+                        
+                        <option value="3">Three</option>
+                    </Form.Select>
+                </FloatingLabel>
+            </div>
+        
+            <div className="themsach">
+                    <p id="tieude">Add a new Book</p>
+                    <div>
+                        <b> Title</b><br></br>
+                        <input type="text" name="name" placeholder=""></input>
+                    </div>
+                    <div>
+                        <b> Author</b>
+                        <br></br>
+                        <input type="text" name="name" placeholder=""></input>
+                    </div>
+            </div>
+            <div className="add">
+                    <div>
+                        <b>Favourite</b>
+                        <input type="checkbox" id="true-false" name="true-false"></input>
+                    </div>
+                    <div>
+                        <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                        </svg>
+                            Add</button>
+                        </div>
+            </div>
 
-        Ý nghĩa
-        Ngữ âm học của thuật ngữ ngôn ngữ học
-
-        Từ hentai viết bằng kanji.
-        Hentai là một từ kanji được kết hợp từ 変 (hen; "biến", "kỳ quặc", hoặc "lạ") và 態 (tai; "diện mạo" hoặc "tình trạng, trạng thái"). Nó cũng có nghĩa là "biến thái tình dục" (trụy lạc) hoặc "bất thường", đặc biệt là khi được sử dụng như một tính từ.[2]:99. Nó là một cách gọi tắt (shortened form) của cụm từ (変態性欲, hentai seiyoku) có nghĩa là "lệch lạc tình dục" (sexual perversion).[3]. Đôi khi, thuật ngữ "hentai" cũng được sử dụng với nghĩa gần giống với từ lóng "ecchi" (エッチ) trong tiếng Nhật.
-
-        Từ nguyên học
-        Lịch sử của từ "hentai" có nguồn gốc của nó trong khoa học và tâm lý học.[3] Hentai được định nghĩa khác trong tiếng Anh, từ điển tiếng Anh Oxford định nghĩa hentai là "một thể loại con (subgenre) nằm trong các thể loại manga và anime Nhật Bản,[4] đặc trưng bởi các nhân vật có tính dục (sexualized) công khai (overtly) và các hình ảnh, các tình tiết (plots) tình dục rõ ràng (explicit)".[4]</p>
-        </>
+        </div>
+    </Container>
+  
        
     )
 

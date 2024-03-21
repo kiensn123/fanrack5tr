@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./component/page/Home";
 import Mennu from "./component/common/Header";
 import Hentai from "./component/page/Hentai";
+
 import './App.css'
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       
 
       <section>
+        
         <Routes>
             <Route path="/" Component={Home}/>
             <Route path="/hentai" Component={Hentai}/>
