@@ -15,7 +15,7 @@ import React, { useState, useEffect } from "react";
 
 function Hentai(){
     const [mangchua,Setmangchua] = useState([])
-    
+    var set = false
     
     const goccay = 
     {
@@ -23,13 +23,14 @@ function Hentai(){
         Author:"",
         Favourite:"false"
     }
+   
 
  
   
     useEffect(function(){
 
     },[addtomang]);
-  
+    
     function yeuthich(e){
         goccay.Favourite = e.target.checked
 
@@ -47,11 +48,21 @@ function Hentai(){
       
     }
     function addtomang(){
-   
-        return(
-            Setmangchua([...mangchua,goccay])
-            
-        )
+        mangchua.forEach(e => {
+            if (e.Author==goccay.Author && e.Title == goccay.Title  ){
+                
+                set = true
+                return
+            }
+        });
+        if (set == false && goccay.Title != "" && goccay.Author !="" ){
+            return(
+                Setmangchua([...mangchua,goccay])
+                
+            )
+        }else{
+            return
+        }
         
       
 
